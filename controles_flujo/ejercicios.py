@@ -20,3 +20,26 @@ if numero >0:
   print(*range(numero,-1,-1),sep=",")
 else:
   print("el numero ingrsado es incorrecto" )
+ 
+ 
+ 
+ 
+ 
+ 
+
+# ejercisio
+edad_usuario:int=int(input("engrese sus edad:"))
+for edad in range(1,edad_usuario+1):
+ print(edad)
+
+# ejercicio 
+ultima_letra:str=""
+for _ in range(3):
+    nombre:str=input("escribe tu nombre->")
+    letras:str=nombre[-1]
+    ultima_letra+=letras
+    print(ultima_letra)
+   
+  #ejercicio
+for i,l in enumerate("aeiou"):
+    print(l*(i+1))
