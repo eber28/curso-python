@@ -16,3 +16,19 @@ if true:
 # oraciones extensos i consume mas memoria, es rapida = " enumerate "
 
 # for _ in range()  si no keremos que nuestra variable que esta en for no ocupe memoria se pone guion bajo " _ "
+
+### while es un mecanismo que usa `python` para repetir intrsuciomes ,la semantica de esta sentencia es : `mientras se cumpla la condicon has algo`
+```python
+while true:
+    print("hola")
+```
+#se utilza cuando nuestro bucle necesite la intervencion de un tercero
+
+nombre=jose
+print(nombre.upper()) #CONVIERTE EL TEXTO E EN MINUSCULA
+
+APELLIDOS="ALVARES"
+print(APELLIDOs.lower ()) #convierte el texto a minuscula
+
+segundo_nombre="luis"
+print(segundo_nombre.capitalize()) # convierte la primera letra en mayuscula

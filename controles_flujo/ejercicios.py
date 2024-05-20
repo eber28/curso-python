@@ -43,3 +43,14 @@ for _ in range(3):
   #ejercicio
 for i,l in enumerate("aeiou"):
     print(l*(i+1))
+ 
+ # ejercisio de while
+nota:int=int(input("ingrese la cantidad de notas: "))
+cantidad=0
+promedio_final=0
+while cantidad < nota:
+    print(f"ingrese la nota {cantidad+1}")
+    promedio=int(input(""))
+    promedio_final+=promedio
+    cantidad+=1
+print(f"el promedio es {promedio_final//cantidad}")    
