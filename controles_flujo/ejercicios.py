@@ -54,3 +54,5 @@ while cantidad < nota:
     promedio_final+=promedio
     cantidad+=1
 print(f"el promedio es {promedio_final//cantidad}")    
+
+# tarea 

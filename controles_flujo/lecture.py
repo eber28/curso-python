@@ -9,10 +9,9 @@ print(f"la cantidad de comas es {contador}")
 condicion=True
 while condicion:
     eval=input("desea continua [S/N]:")
-    if eval.upper=="S"
-    print("continuas en el bucle")
+    if eval.upper=="S":        print("continuas en el bucle")
     continue
 else:
     print("se termino el bucle")
     condicion=False
-    break
+    
