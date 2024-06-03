@@ -46,3 +46,16 @@ alumnos[0]={"nombre":"mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
+
+# METODOS EN PYTHON 
+#  ## NUMEROS
+```python
+len(1234567)
+```
+*devuelve una cantidad de digitos que seria  ->  7 digitos
+# ##  TEXTO
+
+#  ## DE LISTAS 
+#  ## DE TEXTO
+#  ## de tuplas 
+#  ## de diciionario
