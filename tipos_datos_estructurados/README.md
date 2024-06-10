@@ -59,3 +59,20 @@ len(1234567)
 #  ## DE TEXTO
 #  ## de tuplas 
 #  ## de diciionario
+
+### fe de erratas (actualizar listas)
+
+### 8. listas y diccionario por comprencion
+es una tecnica pythonica que nos permite crear listas y diccionaros en una sola linea conbinando bucles y decisiones 
+[¡note]
+**vlc** value looop condicio  - valor bucle condicion
+```python
+# lista por comprencion
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if int(n)%2==0]
+print(nueva_lista)
+# diccionario por comprencion
+lista_amigos=["abel","antony","edith","ruth"]
+diccionario={amigo:len(amigo) for amigo in lista_amigos}
+print(diccionario)
+```

@@ -54,6 +54,7 @@ for auto in autos:
     print(auto)
 
 
+#crear una lista de los primeros 20 numeros primos asiendo uso de comprencion
 
 
 
