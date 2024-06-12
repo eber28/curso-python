@@ -65,3 +65,61 @@ def dicc():
 dicc()
 #retorna {"nombre":"jose","edad":45}
 ```
+## parametros y argumentos
+si una funcion no dispusiera de valores de emtrada estaria limitadaen su actuasion.
+es por ello que los ``parametros`` no permiten variar los datos que consume una funcion para obtener distintos resultados
+**ejemplo**
+*crear una funcion que recive un valor numerico y retorna su raiz cuadrada*
+```python
+def sqrt(valor):
+    return valor**(1/2)
+# NOTA: en este3 caso, el valor 4 es un argumento de la funcion
+sqrt(4)
+```
+cuando llamamos a una funcion con `argumentos`, los valores de estos argumentos se copian en los correspondiente `parametros` dentro de la funcion
+```python
+def ejm(a,b,c):
+    return a+b+c
+ejm(4,6,5)    
+```
+### ARGUMENTOS NOMINALES
+en esta aproximacion los argumentos no son copiados en un orden especificado sino que **se asignan por nombre a cada parametro**. ello nos permite evitar el problema de conocer o recordar cxual es el orden de lo parametros en la definicion en la funcion.
+para utilizarlo basta con realizar una asignacion de cada argumento en la propia
+llamada ala funcion.
+**ejemplo**
+```python
+def build_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia{familia},
+    con {num_core} cores y con una
+    frecuencia de {frecuencia}
+    """)
+# haciendo uso de argumentos nominales
+build_cpu(num_core=4,familia="intel",frecuencia=2.8)
+```
+### ARGUMENTOS POSICIONALES 
+los srgumrntod son copiados en un orden especifico, en este caso debemos conocer o recordar cual es el orden de los parametros
+**ejemplo**
+```python
+def build_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia{familia},
+    con {num_core} cores y con una
+    frecuencia de {frecuencia}
+    """)
+# haciendo uso de argumentos posicionales
+build_cpu("intel",4,2.7)
+```
+### PARAMETROS POR DEFECTO
+es posible especificar **valores por defecto** en los parametros de una funcion, en el caso de uqe no se proporcione un valor de argumento en la llamda a la funcion, el parametro correspondiente tomara el valor definido por defecto
+**ejemplo**
+```python
+def alumnos(nombre,apellido,estado="aprovado"):
+
+alumnos("ruth","castillo")
+alumnos("antony","cruces","desaprobado")
+```
+## DESEMPAQUETADO/EMPAQUETADO DE ARGUMENTOS (TAREA)
+POSICIONALES
+NOMINALES
+## FUNCIONES INTERNAS DE PYTHON (TAREA)
