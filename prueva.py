@@ -1,0 +1,2 @@
+lambda:"hola"
+print(lambda)

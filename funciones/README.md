@@ -128,23 +128,23 @@ El desempaquetado de argumentos se refiere a pasar una lista o tupla como argume
 
 Por ejemplo, supongamos que tienes una función suma que toma dos argumentos:
 
-python
+```python
 def suma(a, b):
     return a + b
-
+```
 
 Si tienes una lista o tupla con los valores que deseas sumar:
 
-python
+```python
 valores = [3, 5]
-
+```
 
 Puedes desempaquetar estos valores y pasarlos como argumentos a la función suma usando el operador *:
 
-python
+```python
 resultado = suma(*valores)
 print(resultado)  # Salida: 8
-
+```
 
 Aquí, *valores desempaqueta la lista [3, 5] en dos argumentos separados 3 y 5, que luego son pasados a la función suma.
 
@@ -153,20 +153,19 @@ Aquí, *valores desempaqueta la lista [3, 5] en dos argumentos separados 3 y 5, 
 El empaquetado de argumentos es el proceso inverso, donde múltiples argumentos se agrupan en una única estructura de datos, como una lista o tupla, para pasarlos como un solo argumento a una función.
 
 Por ejemplo, si deseas definir una función imprimir_valores que pueda manejar cualquier cantidad de argumentos y simplemente los imprima:
-
-python
+```python
 def imprimir_valores(*args):
     for valor in args:
         print(valor)
-
+```
 
 
 Puedes llamar a esta función con cualquier número de argumentos y serán empaquetados en una tupla dentro de args:
 
-python
+```python
 imprimir_valores(1, 2, 3, 4)
 imprimir_valores('a', 'b', 'c')
-
+```
 
 En este caso, *args empaqueta todos los argumentos dados en una tupla, permitiendo que la función imprimir_valores los maneje de manera flexible.
 
@@ -204,3 +203,10 @@ En Python, las funciones internas (o funciones integradas) son aquellas que est�
    - open(): Abre un archivo para lectura, escritura o ambos.
 
 Estas funciones son esenciales y proporcionan funcionalidades básicas y útiles para una variedad de tareas de programación en Python. Además de estas, Python también proporciona módulos estándar y funciones definidas por el usuario que pueden extender aún más las capacidades del lenguaje.
+
+## TIPOS DE FUNCIONES
+### funciones anonimas (funciones lambda)
+### funsiones closure
+### funciones callback
+
+### programacion funcional
