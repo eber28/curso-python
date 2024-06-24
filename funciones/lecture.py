@@ -48,3 +48,11 @@ def alumnos(**kwargs):
     kwargs["nombre"]="abel"
     print(kwargs)
 alumnos(nombre="miguel",apellido="largo",edad=30)
+
+# ejemplos de lambda
+saludo=lambda n,a:f"hola, {n} , {a}"
+print(saludo("ruth","castillo"))
+
+#crear un programa anonimo que reciva como parametro una ista de 5 mnumeros y retorne 2 listas una con los numeros pares y otra con numeros impares
+lista=[4,5,6,7,8,9,3,2,45,]
+    

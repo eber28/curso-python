@@ -1,2 +1,2 @@
 lambda:"hola"
-print(lambda)
+print

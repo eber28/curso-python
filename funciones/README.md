@@ -210,3 +210,17 @@ Estas funciones son esenciales y proporcionan funcionalidades básicas y útiles
 ### funciones callback
 
 ### programacion funcional
+la programcion funcional no requiere que sepas como se dsesarrollo
+``` python 
+# programacion iterativa
+lista=[4,5,2,1,8,9,9,5,]
+def num_minimo(l):
+    minimo=l[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+            return minimo
+# programacion funcional
+min(lista)
+```
+#### averuguar sibre map(), filter(), reduce()
