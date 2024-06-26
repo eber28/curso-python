@@ -55,4 +55,65 @@ print(saludo("ruth","castillo"))
 
 #crear un programa anonimo que reciva como parametro una ista de 5 mnumeros y retorne 2 listas una con los numeros pares y otra con numeros impares
 lista=[4,5,6,7,8,9,3,2,45,]
-    
+
+
+# map
+lista=[6,6,4,8,12,3,5,7]
+nueva_lista=list(map(lambda x:x+1,lista)) #por defecto retorna una lista
+print(nueva_lista)
+
+#tengo una lista der lumnos que todos ellos aprobaron y pasan al tercer semestre,
+#problema en mi lista todos estan con el segundo semestre por lo que tendremos que crear una solucion que cambie el campo de semestre de 2 a 3
+lista_alumnos=[
+    {
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+    },{
+         "nombre":"antony",
+        "edad":40,
+        "semestre":2
+    },{
+         "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+]
+def objeto(e):
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return [e]
+lista_cambiada=list(map(objeto,lista_alumnos))
+print(lista_cambiada) 
+ 
+# para agregar algo a un objeto
+
+def objeto(e):
+    e["especialidad"]="APSTI"
+    return [e]
+
+#FILTER ->  devuelbe los numeros o letraz que necsitas
+
+# devolver los numeros pares d3e una lista
+lista=[4,8,5,2,1,6,5,7,9,45,25,4,6,47,8,5]
+nueva_list=list(filter(lambda x:x%2==0,lista))
+print(nueva_list)
+
+#devuelve solo losmenores de 50 de edad
+lista_alumnos=[
+    {
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+    },{
+         "nombre":"antony",
+        "edad":40,
+        "semestre":2
+    },{
+         "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+]
+menores=list(filter(lambda x:x["edad"]<50,lista_alumnos))
+print(menores)

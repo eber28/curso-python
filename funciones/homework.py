@@ -38,3 +38,8 @@ def sum(*args):
         if n:
             suma+=n
     return suma
+
+# crear uan lista de alumnos con ls siguientes campos 
+# nombre ,apellidos , edada, celular, email
+# 1 actualizar  los registros de un campo mas todos tendran el campo de programa de estudios de enfermeria
+# 2 buscar el segundo registro y actualizar su edad a 50 años
