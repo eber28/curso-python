@@ -43,3 +43,61 @@ def sum(*args):
 # nombre ,apellidos , edada, celular, email
 # 1 actualizar  los registros de un campo mas todos tendran el campo de programa de estudios de enfermeria
 # 2 buscar el segundo registro y actualizar su edad a 50 años
+
+lista_alumnos=[
+{
+         "nombre":"manuel",
+        "apellido":"santander",
+        "edad":45,
+        "celular":987589445,
+        "email":"mannuel15@gmail.com"
+    },
+    {
+    
+          
+             "nombre":"betsy",
+             "apellido":"flores",
+             "edad":19,
+            "celula":961973098,
+            "Email":"betsyflores@gemail.com"
+         },
+         {   
+         
+             
+             "nombre":"kiara",
+             "apellido":"galindo",
+             "edad":20,
+            "celula":961765098,
+            "Email":"kiaragalindo@gemail.com" 
+        },
+        {
+        
+              
+             "nombre":"zara",
+             "apellido":"roman",
+             "edad":25,
+            "celula":961973098,
+            "Email":"zara25@gemail.com" , 
+       }
+       
+]
+def objeto(a):
+    a["programa_estudios"]="Enfermeria"
+    return [
+        a
+    ]
+otra_lista=list(map(objeto,lista_alumnos))
+print(otra_lista)
+
+
+
+print("**SEGUNDO REGUISTRO CAMBIO DE EDAD**")
+
+def objeto(e):
+        e["edad"]=50
+        return [e]
+
+
+
+lista=list(filter(objeto,lista_alumnos))
+print(otra_lista[1])
