@@ -9,8 +9,7 @@ class banco:
        self.numero_cuenta=numero_cuenta
        self.saldo_inicial=saldo_inicial
        self.banco=banco
-
-    # metodos
+# metodos
     def deposito(self):
         print("realizando deposito")
     def retirar(self):
